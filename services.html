@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="services-page">
+
+<header class="navbar">
+
+<div class="brand">
+<img src="images/logo.png" class="logo">
+<h2>Tamu Travel</h2>
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Our Services</a>
+<a href="contact.html">Book Now</a>
+</nav>
+
+</header>
+
+<section class="services-section">
+
+<h1>Our Services</h1>
+
+<p class="services-intro">
+Choose from our most popular travel experiences designed for adventure, relaxation and unforgettable memories.
+</p>
+
+<div class="services-grid">
+
+<!-- SAFARI -->
+
+<div class="service-card">
+
+<img src="images/safari.jpg">
+
+<h3>Safari Adventures</h3>
+
+<p>Explore Kenya’s national parks and see the Big Five.</p>
+
+<span class="price">From $450 per person</span>
+
+<button class="btn" onclick="toggleDetails('safari')">
+View What's Included
+</button>
+
+<div id="safari" class="service-details">
+
+<div class="detail-box">
+<h4>What's Included</h4>
+<ul>
+<li>3 Days / 2 Nights</li>
+<li>Guided game drives</li>
+<li>Park entry support</li>
+<li>Transport during safari</li>
+</ul>
+</div>
+
+<div class="detail-box">
+<h4>Hotel Options</h4>
+<ul>
+<li>Budget Safari Lodge</li>
+<li>Standard Wildlife Camp</li>
+<li>Luxury Savannah Lodge</li>
+</ul>
+</div>
+
+<div class="detail-box">
+<h4>Activities</h4>
+<ul>
+<li>Big Five game viewing</li>
+<li>Sunrise drives</li>
+<li>Photography stops</li>
+<li>Cultural village visits</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<!-- GROUP -->
+
+<div class="service-card">
+
+<img src="images/group.jpg">
+
+<h3>Group & Corporate Travel</h3>
+
+<p>Custom travel experiences for families and teams.</p>
+
+<span class="price">From $900 per group</span>
+
+<button class="btn" onclick="toggleDetails('group')">
+View What's Included
+</button>
+
+<div id="group" class="service-details">
+
+<div class="detail-box">
+<h4>What's Included</h4>
+<ul>
+<li>Travel planning</li>
+<li>Transport coordination</li>
+<li>Flexible itinerary</li>
+<li>Accommodation planning</li>
+</ul>
+</div>
+
+<div class="detail-box">
+<h4>Hotel Options</h4>
+<ul>
+<li>Business hotels</li>
+<li>Family resorts</li>
+<li>Retreat lodges</li>
+</ul>
+</div>
+
+<div class="detail-box">
+<h4>Activities</h4>
+<ul>
+<li>Team building</li>
+<li>Group tours</li>
+<li>Conference retreats</li>
+<li>Family excursions</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<!-- BEACH -->
+
+<div class="service-card">
+
+<img src="images/beach.jpg">
+
+<h3>Beach Holidays</h3>
+
+<p>Relax on the pristine beaches of Mombasa or Diani.</p>
+
+<span class="price">From $380 per person</span>
+
+<button class="btn" onclick="toggleDetails('beach')">
+View What's Included
+</button>
+
+<div id="beach" class="service-details">
+
+<div class="detail-box">
+<h4>What's Included</h4>
+<ul>
+<li>5 Days / 4 Nights</li>
+<li>Beach resort stay</li>
+<li>Transfers included</li>
+<li>Breakfast</li>
+</ul>
+</div>
+
+<div class="detail-box">
+<h4>Hotel Options</h4>
+<ul>
+<li>Diani Beach Resort</li>
+<li>Mombasa Ocean Hotel</li>
+<li>Luxury Villas</li>
+</ul>
+</div>
+
+<div class="detail-box">
+<h4>Activities</h4>
+<ul>
+<li>Snorkeling</li>
+<li>Boat trips</li>
+<li>Beach relaxation</li>
+<li>Local tours</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="page-number">02</div>
+
+<script>
+
+function toggleDetails(id){
+
+const all=document.querySelectorAll('.service-details')
+
+all.forEach(box=>{
+if(box.id!==id){
+box.classList.remove('show')
+}
+})
+
+document.getElementById(id).classList.toggle('show')
+
+}
+
+</script>
+
+</body>
+</html>
