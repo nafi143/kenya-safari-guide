@@ -1,2 +1,0 @@
-# kenya tour guide
-
